@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
 
 importScripts(
-  "/refugee-support-app/precache-manifest.29d44df6a24c07a1deff671a8b0f2df3.js"
+  "/refugee-support-app/precache-manifest.bcb025a44cb89c2c9ab4323850849afc.js"
 );
 
 self.addEventListener('message', (event) => {
