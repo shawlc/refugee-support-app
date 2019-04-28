@@ -104,17 +104,17 @@ function AppRouter() {
         <nav className = "navigation">
           <div className = "title"><span>Sustainable Livelihoods and Cash Support <br></br>for Refugees Around the World</span></div>
           <div className="btn-group">
-            <Link to="/resources/"><button id="link" type="button">Resources for Lawyers and NGOs</button></Link>
-            <Link to="/map/"><button id="link" type="button">Interactive Map</button></Link>
-            <Link to="/cashsupport/"><button id="link" type="button">Why Cash-based Support</button></Link>
-            <Link to="/about/"><button id="link" type="button">About Us</button></Link>
+            <Link to=process.env.PUBLIC_URL + "/resources/"><button id="link" type="button">Resources for Lawyers and NGOs</button></Link>
+            <Link to=process.env.PUBLIC_URL + "/map/"><button id="link" type="button">Interactive Map</button></Link>
+            <Link to=process.env.PUBLIC_URL + "/cashsupport/"><button id="link" type="button">Why Cash-based Support</button></Link>
+            <Link to=process.env.PUBLIC_URL + "/"><button id="link" type="button">About Us</button></Link>
           </div>
         </nav>
 
-        <Route path="/about/" component={About} />
-        <Route path="/cashsupport/" component={CashSupport} />
-        <Route path="/map/" exact component={InteractiveMap} />
-        <Route path="/resources/" exact component={Resources} />
+        <Route path=process.env.PUBLIC_URL + "/" component={About} />
+        <Route path=process.env.PUBLIC_URL + "/cashsupport/" component={CashSupport} />
+        <Route path=process.env.PUBLIC_URL + "/map/" exact component={InteractiveMap} />
+        <Route path=process.env.PUBLIC_URL + "/resources/" exact component={Resources} />
       </div>
     </Router>
   );
