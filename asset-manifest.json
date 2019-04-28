@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/refugee-support-app/static/css/main.541833a4.chunk.css",
+    "main.js": "/refugee-support-app/static/js/main.62e2d9a9.chunk.js",
+    "main.js.map": "/refugee-support-app/static/js/main.62e2d9a9.chunk.js.map",
+    "runtime~main.js": "/refugee-support-app/static/js/runtime~main.df7e8646.js",
+    "runtime~main.js.map": "/refugee-support-app/static/js/runtime~main.df7e8646.js.map",
+    "static/js/2.43f14c6b.chunk.js": "/refugee-support-app/static/js/2.43f14c6b.chunk.js",
+    "static/js/2.43f14c6b.chunk.js.map": "/refugee-support-app/static/js/2.43f14c6b.chunk.js.map",
+    "index.html": "/refugee-support-app/index.html",
+    "precache-manifest.a888f49036f4ba0f6895303166d17e7a.js": "/refugee-support-app/precache-manifest.a888f49036f4ba0f6895303166d17e7a.js",
+    "service-worker.js": "/refugee-support-app/service-worker.js",
+    "static/css/main.541833a4.chunk.css.map": "/refugee-support-app/static/css/main.541833a4.chunk.css.map"
+  }
+}
