@@ -7,7 +7,6 @@ import programs from './refugeeprograms.json';
 import $ from 'jquery';
 
 
-
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function About() {
@@ -46,7 +45,13 @@ function InteractiveMap() {
         var progArray = programs[feature.properties.name]
           for (var i = 0; i < progArray.length; i++) {
             var item = progArray[i];
-            buffer += " <li><a href=" + item.Website + ">" + item.Name + "</a><ul>";
+
+            if(item.Website != ""){
+              buffer += " <li><a href=" + item.Website + ">" + item.Name + "</a><ul>";
+            }else{
+              buffer += " <li>" + item.Name + "<ul>";
+            }
+
             if(item.Affiliations != ""){
               buffer+="<li>Affiliations : " + item.Affiliations + "</li>"
             }
@@ -68,8 +73,11 @@ function InteractiveMap() {
       }
     }
 
-
-
+    function featureFilter(feature){
+      if (programs.hasOwnProperty(feature.properties.name)){
+        return true
+      }
+    }
 
   return (
       <div>
@@ -79,7 +87,7 @@ function InteractiveMap() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
         />
-        <GeoJSON data={countries} onEachFeature={onEachFeature}/>
+        <GeoJSON data={countries} onEachFeature={onEachFeature} filter={featureFilter}/>
       </Map>
       </div>
   )

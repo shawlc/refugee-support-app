@@ -1,5 +1,4 @@
 #map{
-  top:10px;
   height:100vh;
 }
 
@@ -9,12 +8,12 @@
   overflow:auto;
   font-size: calc(10px + 2vmin);
   color: #282c34;
-  height:100px
+  height:110px
 }
 
 .title{
   float:left;
-  height:100px;
+  height:110px;
   display:flex;
   padding-left:20px;
 }
@@ -30,7 +29,7 @@
 }
 
 #link{
-  height:100px;
+  height:110px;
   width:175px;
   font-size:18px;
 }
@@ -57,7 +56,7 @@
 
 /* Add a background color on hover */
 .btn-group button:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgb(211,211,211);
 }
 
 .btn-group button:focus{
@@ -79,8 +78,8 @@
   height:15px;
   }
 .leaflet-popup-tip {
-  border-left:15px solid transparent;
-  border-right:15px solid transparent;
-  border-top:15px solid #2c3e50;
-  background-color: green;
+  border-left:0px solid transparent;
+  border-right:0px solid transparent;
+  border-top:rgba(255,255,255,1.0);
+  background-color: rgba(255,255,255,1.0);
   }
