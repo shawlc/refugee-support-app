@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/refugee-support-app/static/css/main.8e428019.chunk.css",
-    "main.js": "/refugee-support-app/static/js/main.a8746701.chunk.js",
-    "main.js.map": "/refugee-support-app/static/js/main.a8746701.chunk.js.map",
+    "main.js": "/refugee-support-app/static/js/main.bd3bf340.chunk.js",
+    "main.js.map": "/refugee-support-app/static/js/main.bd3bf340.chunk.js.map",
     "runtime~main.js": "/refugee-support-app/static/js/runtime~main.df7e8646.js",
     "runtime~main.js.map": "/refugee-support-app/static/js/runtime~main.df7e8646.js.map",
-    "static/js/2.3710feac.chunk.js": "/refugee-support-app/static/js/2.3710feac.chunk.js",
-    "static/js/2.3710feac.chunk.js.map": "/refugee-support-app/static/js/2.3710feac.chunk.js.map",
+    "static/js/2.6b138dbe.chunk.js": "/refugee-support-app/static/js/2.6b138dbe.chunk.js",
+    "static/js/2.6b138dbe.chunk.js.map": "/refugee-support-app/static/js/2.6b138dbe.chunk.js.map",
     "index.html": "/refugee-support-app/index.html",
-    "precache-manifest.29338b67a3adbb3ea1f123ed42cbd3b7.js": "/refugee-support-app/precache-manifest.29338b67a3adbb3ea1f123ed42cbd3b7.js",
+    "precache-manifest.29d44df6a24c07a1deff671a8b0f2df3.js": "/refugee-support-app/precache-manifest.29d44df6a24c07a1deff671a8b0f2df3.js",
     "service-worker.js": "/refugee-support-app/service-worker.js",
     "static/css/main.8e428019.chunk.css.map": "/refugee-support-app/static/css/main.8e428019.chunk.css.map"
   }
