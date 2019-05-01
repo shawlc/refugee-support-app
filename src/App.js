@@ -368,15 +368,795 @@ function InteractiveMap() {
     }
 
   return (
-      <div>
-      <div id="sidebar"></div>
-      <Map id="map" center={[0.0, -0.0]} zoom={3}>
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-        />
-        <GeoJSON data={countries} onEachFeature={onEachFeature} filter={featureFilter}/>
-      </Map>
+    <div id="tabpage">
+    <Tabs>
+    <TabList>
+      <Tab><h3>Interactive Map</h3></Tab>
+      <Tab><h3>Table of Programs</h3></Tab>
+    </TabList>
+
+    <TabPanel>
+    <div>
+    <Map id="map" center={[10.0, -0.0]} zoom={3}>
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+      />
+      <GeoJSON data={countries} onEachFeature={onEachFeature} filter={featureFilter}/>
+    </Map>
+    </div>
+    </TabPanel>
+
+    <TabPanel>
+    <div id= "table-container">
+    <div id= "table">
+  <h2><strong>Middle East and North Africa</strong></h2>
+  <p>&nbsp;</p>
+  <table style={{width: '1028px'}} cellSpacing={0} cellPadding={7}>
+    <tbody>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '80px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Name</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Affiliation(s)</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '300.054px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Services</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '158.946px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Countries Served</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '10px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Other Information</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '552px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Website</strong></span></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '80px'}}>
+          <p><span style={{fontSize: '16px'}}>Norwegian Refugee Council</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>ECHO</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '300.054px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash transfers; vouchers</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '158.946px'}}>
+          <p><a href="https://www.nrc.no/news/2018/december/giving-warmth-during-winter/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Jordan</u></span></span></a><span style={{fontSize: '16px'}}>, Lebanon, </span><a href="https://www.nrc.no/news/2017/september/humanitarian-cash-assistance-provides-protection-for-afghans-in-iran/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Iran</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.nrc.no/expert-deployment/2016/2018/making-markets-work-in-a-crisis/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Yemen</u></span></span></a><span style={{fontSize: '16px'}}>, Palestine, Syria, </span><a href="https://www.nrc.no/news/2016/august/cash-distribution-in-iraq/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Iraq</u></span></span></a></p>
+        </td>
+        <td style={{background: 'transparent', width: '10px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '552px'}}>
+          <p><a href="https://www.nrc.no/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.nrc.no/</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '80px'}}>
+          <p><span style={{fontSize: '16px'}}>UNHCR</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '300.054px'}}>
+          <p><span style={{fontSize: '16px'}}>Conditional and unconditional cash transfers</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '158.946px'}}>
+          <p><span style={{fontSize: '16px'}}>Jordan, Lebanon, Syria, Iraq, Saudi Arabia, UAE, Yemen, Egypt, Libya, Tunisia, Algeria, Morocco, Sudan</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '10px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '552px'}}>
+          <p><a href="https://www.unhcr.org/middle-east-and-north-africa.html"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.unhcr.org/middle-east-and-north-africa.html</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '80px'}}>
+          <p><span style={{fontSize: '16px'}}>UNICEF</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>UNHCR, World Food Program</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '300.054px'}}>
+          <p><span style={{fontSize: '16px'}}>Conditional cash transfers</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '158.946px'}}>
+          <p><a href="https://www.unicefusa.org/stories/cash-transfers-safety-net-refugee-families-crisis/34000"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Lebanon</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.unicef.org/stories/innovative-cash-transfer-programme-supports-syrian-children-disabilities"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Syria</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.unicef.org/stories/cash-assistance-helps-syrian-children-in-iraq-education"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Iraq</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.unicef.org/stories/unconditional-cash-grants-are-lifeline-for-mother-yemen"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Yemen</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.unicef.org/jordan/social-protection"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Jordan</u></span></span></a></p>
+        </td>
+        <td style={{background: 'transparent', width: '10px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '552px'}}>
+          <p><a href="https://www.unicef.org/mena/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.unicef.org/mena/</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '80px'}}>
+          <p><span style={{fontSize: '16px'}}>Mercy Corps</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '300.054px'}}>
+          <p><a href="https://www.mercycorps.org/articles/how-were-investing-entrepreneurs-improve-lives-around-world"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Social Venture Fund</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.mercycorps.org/articles/greece/quick-facts-what-you-need-know-about-cash-aid"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Cash Transfers</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.mercycorps.org/sites/default/files/Mobile%20Wallet_Increased%20Accessibility%20Reduced%20Visibility_0.pdf"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Mobile cash delivery system</u></span></span></a></p>
+        </td>
+        <td style={{background: 'transparent', width: '158.946px'}}>
+          <p><a href="https://www.mercycorps.org/countries/iraq"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Iraq</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.mercycorps.org/countries/jordan"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Jordan</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.mercycorps.org/countries/lebanon"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Lebanon</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.mercycorps.org/countries/libya"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Libya</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.mercycorps.org/countries/palestine-west-bank-gaza"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Palestine</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.mercycorps.org/countries/sudan"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Sudan</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.mercycorps.org/countries/syria"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Syria</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.mercycorps.org/countries/tunisia"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Tunisia</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://www.mercycorps.org/countries/yemen"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Yemen</u></span></span></a></p>
+        </td>
+        <td style={{background: 'transparent', width: '10px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '552px'}}>
+          <p><a href="https://www.mercycorps.org/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.mercycorps.org/</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '80px'}}>
+          <p><span style={{fontSize: '16px'}}>The Department for International Development (DFID), United Kingdom</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{color: '#222222'}}><span style={{fontSize: '16px'}}>World Bank, UNICEF, Palladium International, CARE, OxFam</span></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '300.054px'}}>
+          <p><span style={{fontSize: '16px'}}>Funds public sector development initiatives, including cash assistance and voucher programs.</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '158.946px'}}>
+          <p><span style={{fontSize: '16px'}}>Jordan, </span><a href="https://devtracker.dfid.gov.uk/projects/GB-1-205094"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Iraq</u></span></span></a><span style={{fontSize: '16px'}}>, </span><a href="https://devtracker.dfid.gov.uk/projects/GB-GOV-1-300231"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Lebanon</u></span></span></a><span style={{fontSize: '16px'}}>, Syria, </span><a href="https://devtracker.dfid.gov.uk/projects/GB-GOV-1-300046"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>Yemen</u></span></span></a></p>
+        </td>
+        <td style={{background: 'transparent', width: '10px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '552px'}}>
+          <p><a href="https://www.gov.uk/government/organisations/department-for-international-development"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.gov.uk/government/organisations/department-for-international-development</u></span></span></a></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+  <h2><strong>Africa</strong></h2>
+  <p>&nbsp;</p>
+  <table style={{width: '1137px'}} cellSpacing={0} cellPadding={7}>
+    <tbody>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '82px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Name</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Affiliation(s)</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '154px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Services</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '68px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Countries Served</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '223.369px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Other Information</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '423.631px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Website</strong></span></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '82px'}}>
+          <p><span style={{fontSize: '16px'}}>Alternative Responses For Communities in Crisis</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>UNICEF; UK-AID</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '154px'}}>
+          <p><span style={{fontSize: '16px'}}>Monthly UCT of $110 - 135 per household; <br /> $225 for extremely vulnerable households</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '68px'}}>
+          <p><span style={{fontSize: '16px'}}>Democratic Republic of Congo</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '223.369px'}}>
+          <p><span style={{fontSize: '16px'}}>For displaced families, host families, and returning displaced families in Eastern DRC</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '423.631px'}}>
+          <p><a href="http://www.cashlearning.org/news-and-events/news-and-events/post/223-unicefas-alternative-responses-for-communities-in-crisis-arcc-programme-a-the-largest-humanitarian-multi-purpose-unconditional-cash-transfer-program-in-the-drc"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>http://www.cashlearning.org/news-and-events/news-and-events/post/223-unicefas-alternative-responses-for-communities-in-crisis-arcc-programme-a-the-largest-humanitarian-multi-purpose-unconditional-cash-transfer-program-in-the-drc</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '82px'}}>
+          <p><span style={{fontSize: '16px'}}>Emergency Cash Transfer Project</span></p>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>ChildFund</span></p>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '154px'}}>
+          <p><span style={{fontSize: '16px'}}>Unconditional Cash Transfers for Affected Households; Mobile Money Cash Transfer</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '68px'}}>
+          <p><span style={{fontSize: '16px'}}>Gambia</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '223.369px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '423.631px'}}>
+          <p><span style={{color: '#0000ff'}}><u><a href="http://www.cashlearning.org/downloads/user-submitted-resources/2018/07/1530737717.ChildFund-MMCT-Assessment-063018.pdf"><span style={{fontSize: '16px'}}>http://www.cashlearning.org/downloads/user-submitted-resources/2018/07/1530737717.ChildFund-MMCT-Assessment-063018.pdf </span></a></u></span></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '82px'}}>
+          <p><span style={{fontSize: '16px'}}>Emergency Food and Cash Assistance</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>World Food Program</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '154px'}}>
+          <p><span style={{fontSize: '16px'}}>Food and cash support</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '68px'}}>
+          <p><span style={{fontSize: '16px'}}>Angola</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '223.369px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '423.631px'}}>
+          <p><span style={{color: '#0000ff'}}><u><a href="https://www1.wfp.org/operations/201083-emergency-food-assistance-angola-conflict-affected-refugees"><span style={{fontSize: '16px'}}>https://www1.wfp.org/operations/201083-emergency-food-assistance-angola-conflict-affected-refugees </span></a></u></span></p>
+          <p align="center">&nbsp;</p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '82px'}}>
+          <p><span style={{fontSize: '16px'}}>Food Assistance for Assets</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>World Food Program</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '154px'}}>
+          <p><span style={{fontSize: '16px'}}>Food and/or cash-based </span></p>
+          <p><span style={{fontSize: '16px'}}>transfers</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '68px'}}>
+          <p><span style={{fontSize: '16px'}}>Kenya, Niger, Zimbabwe</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '223.369px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '423.631px'}}>
+          <p><span style={{color: '#0000ff'}}><u><a href="https://www1.wfp.org/food-assistance-for-assets"><span style={{fontSize: '16px'}}>https://www1.wfp.org/food-assistance-for-assets</span></a></u></span></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '82px'}}>
+          <p><span style={{fontSize: '16px'}}>Food For Peace: Emergency Food Assistance Program</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>USAID; UN</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '154px'}}>
+          <p><span style={{fontSize: '16px'}}>Food and cash support</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '68px'}}>
+          <p><span style={{fontSize: '16px'}}>Senegal, Sierra Leone</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '223.369px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '423.631px'}}>
+          <p><span style={{color: '#0000ff'}}><u><a href="http://www.cashlearning.org/downloads/resources/casestudies/socialprotectionsenegalen.pdf"><span style={{fontSize: '16px'}}>http://www.cashlearning.org/downloads/resources/casestudies/socialprotectionsenegalen.pdf</span></a></u></span></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '82px'}}>
+          <p><span style={{fontSize: '16px'}}>GiveDirectly: large cash transfers to refugees</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>UK- AID, Comic Relief, IKEA Foundation</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '154px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '68px'}}>
+          <p><span style={{fontSize: '16px'}}>Uganda</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '223.369px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '423.631px'}}>
+          <p><span style={{color: '#0000ff'}}><u><a href="https://givedirectly.org/pdf/CashTransfersToRefugeeCommunitiesWhitePaper.pdf"><span style={{fontSize: '16px'}}>https://givedirectly.org/pdf/CashTransfersToRefugeeCommunitiesWhitePaper.pdf</span></a></u></span></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '82px'}}>
+          <p><span style={{fontSize: '16px'}}>Humanitarian cash assistance</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>The Cash Learning Partnership</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '154px'}}>
+          <p><span style={{fontSize: '16px'}}>Unconditional/Conditional Cash Transfer Support</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '68px'}}>
+          <p><span style={{fontSize: '16px'}}>Mali</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '223.369px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '423.631px'}}>
+          <p><span style={{color: '#0000ff'}}><u><a href="http://www.cashlearning.org/downloads/160818calp-mali-case-studyfinalenweb.pdf"><span style={{fontSize: '16px'}}>http://www.cashlearning.org/downloads/160818calp-mali-case-studyfinalenweb.pdf</span></a></u></span></p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '82px'}}>
+          <p><span style={{fontSize: '16px'}}>Humanitarian cash assistance for refugees to national social safety nets (</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>UNHCR</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '154px'}}>
+          <p><span style={{fontSize: '16px'}}>Conditional and unconditional cash transfers</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '68px'}}>
+          <p><span style={{fontSize: '16px'}}>Niger, Nigeria</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '223.369px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '423.631px'}}>
+          <p><span style={{color: '#0000ff'}}><u><a href="https://www.unhcr.org/5cc011417"><span style={{fontSize: '16px'}}>https://www.unhcr.org/5cc011418</span></a></u></span></p>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '82px'}}>
+          <p><span style={{fontSize: '16px'}}>Integrated Nutrition Social Cash Transfer</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>UNICEF; Irish Aid</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '154px'}}>
+          <p><span style={{fontSize: '16px'}}>Monthly Cash Transfers</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '68px'}}>
+          <p><span style={{fontSize: '16px'}}>Ethiopia</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '223.369px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '423.631px'}}>
+          <p><span style={{color: '#0000ff'}}><u><a href="https://transfer.cpc.unc.edu/countries-2/ethiopia/"><span style={{fontSize: '16px'}}>https://transfer.cpc.unc.edu/countries-2/ethiopia/ </span></a></u></span></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '82px'}}>
+          <p><span style={{fontSize: '16px'}}>Refugees and Host Communities Support Project (PARCA)</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>World Bank</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '154px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '68px'}}>
+          <p><span style={{fontSize: '16px'}}>Chad</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '223.369px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '423.631px'}}>
+          <p><span style={{color: '#0000ff'}}><u><a href="https://www.worldbank.org/en/news/press-release/2018/09/12/chad-a-60-million-world-bank-grant-to-support-refugees-and-host-communities"><span style={{fontSize: '16px'}}>https://www.worldbank.org/en/news/press-release/2018/09/12/chad-a-60-million-world-bank-grant-to-support-refugees-and-host-communities</span></a></u></span></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+  <h2><strong>Asia</strong></h2>
+  <p>&nbsp;</p>
+  <table style={{width: '1128px'}} cellSpacing={0} cellPadding={7}>
+    <tbody>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Name</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Affiliation(s)</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Services</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '318px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Countries Served</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '283.75px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Other Information</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '362.25px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Website</strong></span></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>Asia-Pacific Regional Cash Working Group*</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>OCHA, WFP, IFRC, CaLP</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p><span style={{fontSize: '16px'}}>Bank, Mobile, Cash.Voucher</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '318px'}}>
+          <p><span style={{fontSize: '16px'}}>Afghanistan, Nepal, Vietnam, Phillippines, Cambodia, Indonesia, Myanmar, Bangladesh</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '283.75px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '362.25px'}}>
+          <p><a href="http://www.cashlearning.org/coordination/asia-regional-cash-working-group"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>http://www.cashlearning.org/coordination/asia-regional-cash-working-group</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>Action Against Hunger</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>ACF International</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash assistance in response to food emergencies</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '318px'}}>
+          <p><span style={{fontSize: '16px'}}>Afghanistan, Bangladesh, Cambodia, Georgia, India, Indonesia, Myanmar, Nepal, Pakistan, Philippines</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '283.75px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '362.25px'}}>
+          <p><a href="https://www.actionagainsthunger.org/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.actionagainsthunger.org</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>Danish Church Aid</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash assistance</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '318px'}}>
+          <p><span style={{fontSize: '16px'}}>Nepal, Bangladesh, Myanmar, Cambodia</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '283.75px'}}>
+          <p><span style={{fontSize: '16px'}}>Multi-purpose Cash transfer programming is DCA’s preferred response methodology wherever possible. Since 2010 CTP has been a key strategic priority in our Humanitarian Action Policy and the majority of our programs now have a cash component.</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '362.25px'}}>
+          <p><a href="https://www.danchurchaid.org/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.danchurchaid.org</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>Norwegian Refugee Council</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash assistance (conditional and unconditional)</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '318px'}}>
+          <p><span style={{fontSize: '16px'}}>Myanmar</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '283.75px'}}>
+          <p><span style={{fontSize: '16px'}}>NRC is interested in using cash and voucher programming as a modality across all these areas of programming and across all phases of refugee/displaced settings.</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '362.25px'}}>
+          <p><a href="https://www.nrc.no/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.nrc.no</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>Oxfam</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash transfers</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '318px'}}>
+          <p><span style={{fontSize: '16px'}}>Afghanistan, Bangladesh, Cambodia, China, India, Myanmar, Pakistan, Philippines, Russia, Thailand, Vietnam</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '283.75px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash transfer programming forms a significant part of Oxfam GB’s work in food insecurity, and is an emerging response mechanism in shelter and water and sanitation sectors.</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '362.25px'}}>
+          <p><a href="https://www.oxfamamerica.org/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.oxfamamerica.org</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>UNHCR</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>United Nations</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p><span style={{fontSize: '16px'}}>Conditional and unconditional cash transfers</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '318px'}}>
+          <p><span style={{fontSize: '16px'}}>Afghanistan, Bangladesh, China, India, Indonesia, Kazakhstan, Kyrgyzstan, Malaysia, Myanmar, Nepal, Pakistan,Philippines, Russia, South Korea, Sri Lanka, Tajikistan, Taiwan, Thailand</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '283.75px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '362.25px'}}>
+          <p><a href="https://www.unhcr.org/en-us/asia-and-the-pacific.html"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.unhcr.org/en-us/asia-and-the-pacific.html</u></span></span></a></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+  <h2><strong>Europe</strong></h2>
+  <p>&nbsp;</p>
+  <table style={{width: '1128px'}} cellSpacing={0} cellPadding={7}>
+    <tbody>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Name</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Affiliation(s)</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Services</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '263.335px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Countries Served</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '253.665px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Other Information</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '289px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Website</strong></span></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>Norwegian Refugee Council</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash assistance (conditional and unconditional)</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '263.335px'}}>
+          <p><span style={{fontSize: '16px'}}>Ukraine</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '253.665px'}}>
+          <p><span style={{fontSize: '16px'}}>NRC is interested in using cash and voucher programming as a modality across all these areas of programming and across all phases of refugee/displaced settings.</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '289px'}}>
+          <p><a href="https://www.nrc.no/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.nrc.no</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>Oxfam</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash transfers</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '263.335px'}}>
+          <p><span style={{fontSize: '16px'}}>Bosnia and Herzegovina, France, Germany, Greece, Ireland, Italy, Kosovo, Netherlands, Serbia, Spain, Turkey</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '253.665px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash transfer programming forms a significant part of Oxfam GB’s work in food insecurity, and is an emerging response mechanism in shelter and water and sanitation sectors.</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '289px'}}>
+          <p><a href="https://www.oxfamamerica.org/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.oxfamamerica.org</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>UNHCR</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p><span style={{fontSize: '16px'}}>United Nations</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p><span style={{fontSize: '16px'}}>Conditional and unconditional cash transfers</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '263.335px'}}>
+          <p><span style={{fontSize: '16px'}}>Albania, Belarus, Bosnia and Herzegovina, Bulgaria, Greece, Kosovo, North Macedonia, Moldova, Montenegro, Serbia, Slovakia, Turkey, Ukraine</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '253.665px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '289px'}}>
+          <p><a href="https://www.unhcr.org/en-us/europe.html"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.unhcr.org/en-us/europe.html</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '263.335px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '253.665px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '289px'}}>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '86px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '85px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '263.335px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '253.665px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '289px'}}>
+          <p>&nbsp;</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <h2><strong>Americas</strong></h2>
+  <p>&nbsp;</p>
+  <table style={{width: '1102px'}} cellSpacing={0} cellPadding={7}>
+    <tbody>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Name</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '141px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Affiliation(s)</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '229px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Services</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '136px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Countries Served</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '251.364px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Other Information</strong></span></p>
+        </td>
+        <td style={{background: 'transparent', width: '276.636px'}}>
+          <p align="center"><span style={{fontSize: '16px'}}><strong>Website</strong></span></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>Refugee Cash Assistance</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '141px'}}>
+          <p><span style={{fontSize: '16px'}}>US Department of Social and Health Services, Office of Refugee Resettlement</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '229px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash and medical assistance</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '136px'}}>
+          <p><span style={{fontSize: '16px'}}>United States</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '251.364px'}}>
+          <p><span style={{fontSize: '16px'}}>Provides services to refugees for their first 8 months in the United States</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '276.636px'}}>
+          <p><a href="https://www.dshs.wa.gov/esa/community-services-offices/refugee-cash-assistance"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.dshs.wa.gov/esa/community-services-offices/refugee-cash-assistance</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>Action Against Hunger</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '141px'}}>
+          <p><span style={{fontSize: '16px'}}>ACF International</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '229px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash assistance in response to food emergencies</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '136px'}}>
+          <p><span style={{fontSize: '16px'}}>Bolivia, Columbia, Guatemala, Haiti, Nicaragua, Peru</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '251.364px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '276.636px'}}>
+          <p><a href="https://www.actionagainsthunger.org/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.actionagainsthunger.org</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>Norwegian Refugee Council</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '141px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '229px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash assistance (conditional and unconditional)</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '136px'}}>
+          <p><span style={{fontSize: '16px'}}>Colombia</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '251.364px'}}>
+          <p><span style={{fontSize: '16px'}}>NRC is interested in using cash and voucher programming as a modality across all these areas of programming and across all phases of refugee/displaced settings.</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '276.636px'}}>
+          <p><a href="https://www.nrc.no/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.nrc.no</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>Oxfam</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '141px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '229px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash transfers</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '136px'}}>
+          <p><span style={{fontSize: '16px'}}>Colombia, Cuba, El Salvador, Guatemala, Mexico, Peru, United States</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '251.364px'}}>
+          <p><span style={{fontSize: '16px'}}>Cash transfer programming forms a significant part of Oxfam GB’s work in food insecurity, and is an emerging response mechanism in shelter and water and sanitation sectors.</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '276.636px'}}>
+          <p><a href="https://www.oxfamamerica.org/"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.oxfamamerica.org</u></span></span></a></p>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style={{background: 'transparent', width: '64px'}}>
+          <p><span style={{fontSize: '16px'}}>UNHCR</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '141px'}}>
+          <p><span style={{fontSize: '16px'}}>United Nations</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '229px'}}>
+          <p><span style={{fontSize: '16px'}}>Conditional and unconditional cash transfers</span></p>
+        </td>
+        <td style={{background: 'transparent', width: '136px'}}>
+          <p><span style={{fontSize: '16px'}}>Argentina, Brazil, Colombia, Costa Rica, Cuba, Ecuador, Haiti, Mexico, Panama, Peru, United States, Venezuela, </span></p>
+        </td>
+        <td style={{background: 'transparent', width: '251.364px'}}>
+          <p>&nbsp;</p>
+        </td>
+        <td style={{background: 'transparent', width: '276.636px'}}>
+          <p><a name="_GoBack" /> <a href="https://www.unhcr.org/en-us/americas.html"><span style={{color: '#1155cc'}}><span style={{fontSize: '16px'}}><u>https://www.unhcr.org/en-us/americas.html</u></span></span></a></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+</div>
+
+    </div>
+      </TabPanel>
+      </Tabs>
       </div>
   )
 }
@@ -416,7 +1196,7 @@ function AppRouter() {
           <div className = "title"><span>Sustainable Livelihoods and Cash Support <br></br>for Refugees Around the World</span></div>
           <div className="btn-group">
             <Link to={"/resources/"}><button id="link" type="button">Discussion for Lawyers</button></Link>
-            <Link to={"/map/"}><button id="link" type="button">Interactive Map of Programs</button></Link>
+            <Link to={"/map/"}><button id="link" type="button">Cash Support Programs</button></Link>
             <Link to={"/regionbreakdown/"}><button id="link" type="button">Regional Breakdown</button></Link>
             <Link to={"/cashsupport/"}><button id="link" type="button">Why Cash-based Support</button></Link>
             <Link to={"/about/"}><button id="link" type="button">About Us</button></Link>
