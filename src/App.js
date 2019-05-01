@@ -415,21 +415,21 @@ function AppRouter() {
           <div className = "fix">
           <div className = "title"><span>Sustainable Livelihoods and Cash Support <br></br>for Refugees Around the World</span></div>
           <div className="btn-group">
-            <Link to={process.env.PUBLIC_URL + "/resources/"}><button id="link" type="button">Discussion for Lawyers</button></Link>
-            <Link to={process.env.PUBLIC_URL + "/map/"}><button id="link" type="button">Interactive Map of Programs</button></Link>
-            <Link to={process.env.PUBLIC_URL + "/regionbreakdown/"}><button id="link" type="button">Regional Breakdown</button></Link>
-            <Link to={process.env.PUBLIC_URL + "/cashsupport/"}><button id="link" type="button">Why Cash-based Support</button></Link>
-            <Link to={process.env.PUBLIC_URL + "/about/"}><button id="link" type="button">About Us</button></Link>
+            <Link to={"/resources/"}><button id="link" type="button">Discussion for Lawyers</button></Link>
+            <Link to={"/map/"}><button id="link" type="button">Interactive Map of Programs</button></Link>
+            <Link to={"/regionbreakdown/"}><button id="link" type="button">Regional Breakdown</button></Link>
+            <Link to={"/cashsupport/"}><button id="link" type="button">Why Cash-based Support</button></Link>
+            <Link to={"/about/"}><button id="link" type="button">About Us</button></Link>
           </div>
           </div>
         </nav>
 
         <Switch>
-        <Route path={process.env.PUBLIC_URL + "/about/"} component={About} />
-        <Route path={process.env.PUBLIC_URL + "/cashsupport/"} component={CashSupport} />
-        <Route path={process.env.PUBLIC_URL + "/regionbreakdown/"} exact component={RegionalBreakdown} />
-        <Route path={process.env.PUBLIC_URL + "/map/"} exact component={InteractiveMap} />
-        <Route path={process.env.PUBLIC_URL + "/resources/"} exact component={Resources} />
+        <Route path={"/about/"} component={About} />
+        <Route path={"/cashsupport/"} component={CashSupport} />
+        <Route path={"/regionbreakdown/"} exact component={RegionalBreakdown} />
+        <Route path={"/map/"} exact component={InteractiveMap} />
+        <Route path={"/resources/"} exact component={Resources} />
           <Route path="*" component={About}/>
         </Switch>
       </div>
