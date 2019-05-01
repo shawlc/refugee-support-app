@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7e409d3ae61131ff6fd19cc340edc472",
+    "revision": "9252fe0a2c392b1c5f08b3e695b9be76",
     "url": "/refugee-support-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/refugee-support-app/static/css/2.5c17b9f1.chunk.css"
   },
   {
-    "revision": "806342e28a65e4b6eb02",
+    "revision": "bb9cd9270850a1fdd7c3",
     "url": "/refugee-support-app/static/css/main.d69c38ff.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/refugee-support-app/static/js/2.2ddd72dd.chunk.js"
   },
   {
-    "revision": "806342e28a65e4b6eb02",
-    "url": "/refugee-support-app/static/js/main.2c3b3ad5.chunk.js"
+    "revision": "bb9cd9270850a1fdd7c3",
+    "url": "/refugee-support-app/static/js/main.98973ee4.chunk.js"
   },
   {
     "revision": "621fe8616a2fd51ea06b",
