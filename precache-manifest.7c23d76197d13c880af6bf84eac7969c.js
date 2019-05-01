@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9252fe0a2c392b1c5f08b3e695b9be76",
+    "revision": "7355bd4360c3bf5c6b28409c03a04b9a",
     "url": "/refugee-support-app/index.html"
   },
   {
-    "revision": "72b38a83497977eb36b5",
+    "revision": "8eb2ea0fadc383a0bfa2",
     "url": "/refugee-support-app/static/css/2.5c17b9f1.chunk.css"
   },
   {
-    "revision": "bb9cd9270850a1fdd7c3",
-    "url": "/refugee-support-app/static/css/main.d69c38ff.chunk.css"
+    "revision": "d0efda45e82e578aaef6",
+    "url": "/refugee-support-app/static/css/main.7474e39b.chunk.css"
   },
   {
-    "revision": "72b38a83497977eb36b5",
-    "url": "/refugee-support-app/static/js/2.2ddd72dd.chunk.js"
+    "revision": "8eb2ea0fadc383a0bfa2",
+    "url": "/refugee-support-app/static/js/2.801aeada.chunk.js"
   },
   {
-    "revision": "bb9cd9270850a1fdd7c3",
-    "url": "/refugee-support-app/static/js/main.98973ee4.chunk.js"
+    "revision": "d0efda45e82e578aaef6",
+    "url": "/refugee-support-app/static/js/main.3d6b1072.chunk.js"
   },
   {
     "revision": "621fe8616a2fd51ea06b",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/refugee-support-app/static/media/asia.2fe2ed2f.jpg"
   },
   {
-    "revision": "3525a8bd30cf06fb55a327841d59fada",
-    "url": "/refugee-support-app/static/media/europe.3525a8bd.jpg"
+    "revision": "a49b9436576487af7794c401ed2ff27c",
+    "url": "/refugee-support-app/static/media/europe.a49b9436.jpg"
   },
   {
     "revision": "ee0b3ab15f3eafed3d9a3a98626ea7d6",
