@@ -5,7 +5,7 @@ This is a static Javascript website I created Spring 2019 for my friend's projec
 
 I used this project to introduce myself to the React framework. This application uses React Router to implement tabs within a single page. It also includes a web map displaying cash support programs around the world using the react-leaflet library.
 
-The app can be viewed at https://leonardshaw.github.io/refugee-support-app
+The app can be viewed at https://shawlc.github.io/refugee-support-app
 
 #### Instructions for deploying to Github Pages:
 
